@@ -1,0 +1,64 @@
+<div id='header'>
+	<div class='verticalonlittlescreens' style='width: 100%;'>
+		<div class='thebody littlescreensonly'>
+			<img id='logofv' class='showonlittlescreens' style='width: 30%; height: auto; align-self: center;' src="images/logo-fourmis-vertes.png" alt="logo des fourmis vertes">
+			<img class='showonlittlescreens' style='width: 50%; height: auto; align-self: center;' src='images/logo-api.gif' alt="logo de l'API">
+		</div>
+		<a href="/delast" title="Les fourmis vertes, l'éducologie urbaine - API Appartement Pédagogique Itinérant">
+			<img id='logofv' class='hideonlittlescreens' src="images/logo-fourmis-vertes.png" alt="logo des fourmis vertes">
+		</a>
+		<div id='midheader'>
+			<p class='v'><strong>Entre social et environnement...</strong></p>
+			<p class='j titre1'><strong>L'éducologie urbaine</strong></p>
+			<p class='v'><strong><em>Education, sensibilisation, formation relative à l'environnement</em></strong></p>
+			<p class='j titre2'><strong>Notre devise</strong></p>
+			<p class='v'><strong>Patience, persévérence, qualité ... et beaucoup de créativité</strong></p>
+		</div>
+		<a href="api.php">
+			<img style='width:294px;height:193px;' class='hideonlittlescreens' src='images/logo-api.gif' alt="logo de l'API">
+		</a>
+	</div>
+</div>
+<div>
+		<a href="https://www.facebook.com/fourmisvertes" title='Facebook des Fourmis Vertes'>
+			<img src='images/logo-fb.png' alt='Logo Facebook'>
+		</a>
+		<a href='contact'>
+			CONTACT
+		</a>
+</div>
+<!-- Navbarre -->
+<nav id='navbar' >
+	<div class='thebody responsive50to100'><a href="index.php" class='vertf'></a>
+	<a href="nos-champs-d-action.php" class='vertc'>Nos champs d'action</a>
+	<a href="nos-realisations.php" class='jaune'>Nos réalisations</a></div>
+	<div class='thebody responsive50to100'><div class="bleuc deroulant" style='position:relative;' onclick="menu('menubleuc')">
+		<p id='menubleuc' class='bleuc deroule hide' style=''>Les fourmis vertes</br></br><a href="mais-qui-sont-ces-fourmis.php">Qui sommes nous?</a></br></br><a href="ils-nous-ont-fait-confiance.php">Partenaires</a></br></br><a href="revue-de-presse.php">Revue de presse</a><br/><br/><a href="outils-pedagogiques.php">Outils pédagogiques</a></p>
+		Les fourmis vertes
+	</div>
+	<div class="bleuf deroulant" style='position:relative;' onclick="menu('menubleuf')">
+		<p id='menubleuf' class='bleuf deroule hide' style=''>L'API</br></br><a href="api.php">Présentation</a></br></br><a href="documents.php">Documents</a></br></br><a href="photos.php">Photos</a><br/><br/><a href="temoignages.php">Témoignages</a></p>
+		L'API
+	</div>
+	<a href="je-veux-devenir-une-fourmi-verte.php" class='violet'>Devenir une fourmi verte</a></div>
+</nav>
+<script type="text/javascript">
+	function menu(color){
+		var NAME = document.getElementById(color);
+		var currentClass = NAME.className;
+		if (color == 'menubleuc') {
+			if (currentClass == "bleuc deroule show") { // Check the current class name
+				NAME.className = "bleuc deroule hide";   // Set other class name
+			} else {
+				NAME.className = "bleuc deroule show";  // Otherwise, use `second_name`
+			}
+		} else {
+			if (currentClass == "bleuf deroule show") { // Check the current class name
+				NAME.className = "bleuf deroule hide";   // Set other class name
+			} else {
+				NAME.className = "bleuf deroule show";  // Otherwise, use `second_name`
+			}
+		}
+	}
+</script>
+<!-- Navbarre FIN -->
